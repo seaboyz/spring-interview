@@ -1,4 +1,5 @@
 - [spring-interview](#spring-interview)
+  - [What is enterprise java application?](#what-is-enterprise-java-application)
   - [1. Why Spring is so popular?](#1-why-spring-is-so-popular)
     - [a. Dependency Injection](#a-dependency-injection)
       - [Before Spring](#before-spring)
@@ -29,6 +30,9 @@
       - [What is @RestController?](#what-is-restcontroller)
 
 # spring-interview
+## What is enterprise java application?
+Enterprise applications are about the display, manipulation, and storage of large amounts of often ***complex*** data and the support or ***automation*** of business processes with that data.
+
 https://youtu.be/2prdt2byiTs
 ## 1. Why Spring is so popular?
 ### a. Dependency Injection
