@@ -11,6 +11,7 @@
   - [4. what is @SpringBootApplication?](#4-what-is-springbootapplication)
     - [4.1. @Configuration](#41-configuration)
   - [@Bean vs @Component](#bean-vs-component)
+  - [@Controller  vs @Service vs @Repository](#controller--vs-service-vs-repository)
 - [Spring(Infosys question)](#springinfosys-question)
   - [Srping Bean scrope?](#srping-bean-scrope)
   - [Spring framework:Tell me about spring boot](#spring-frameworktell-me-about-spring-boot)
@@ -20,6 +21,7 @@
   - [Spring framework:Tell me about spring boot](#spring-frameworktell-me-about-spring-boot-1)
   - [Do you know what stereotypes and annotations are](#do-you-know-what-stereotypes-and-annotations-are)
   - [What is dependencies Injection?](#what-is-dependencies-injection)
+  - [Controller injection vs setter injection vs filed injection](#controller-injection-vs-setter-injection-vs-filed-injection)
   - [How many types of beans in spring?](#how-many-types-of-beans-in-spring)
   - [What annotations that are use in Spring?](#what-annotations-that-are-use-in-spring)
   - [What is the difference between spring and springboot?](#what-is-the-difference-between-spring-and-springboot)
@@ -90,6 +92,11 @@ class VehicleFactoryConfig {}
 ## @Bean vs @Component
 ![](@Bean-@Compnent.png)
 
+## @Controller  vs @Service vs @Repository
+* Indicates this component is an MVC ***controller***, which handles ***requests*** and ***responses***.
+* We mark beans with @Service to indicate that they're holding the ***business*** logic. Besides being used in the service layer, there isn't any other special use for this annotation.
+* @Repository’s job is to catch ***persistence-specific exceptions*** and re-throw them as one of Spring’s unified unchecked exceptions.
+
 
 <hr>
 
@@ -119,6 +126,10 @@ https://www.baeldung.com/spring-bean-scopes
 ## Spring framework:Tell me about spring boot
 ## Do you know what stereotypes and annotations are
 ## What is dependencies Injection?
+## Controller injection vs setter injection vs filed injection
+![](constructor-injection.png)
+![](setter-injection.png)
+![](filed-injection.png)
 ## How many types of beans in spring?
 ## What annotations that are use in Spring? 
 
@@ -149,3 +160,4 @@ https://www.baeldung.com/spring-bean-scopes
 * DAO is a lower-level concept, closer to the storage systems. However, Repository is a higher-level concept, closer to the Domain objects
 * DAO works as a data mapping/access layer, hiding ugly queries. However, a repository is a layer between domains and data access layers, hiding the complexity of collating data and preparing a domain object
 * DAO can't be implemented using a repository. However, a repository can use a DAO for accessing underlying storage
+
