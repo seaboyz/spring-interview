@@ -10,6 +10,7 @@
   - [3. what is auto-wiring?](#3-what-is-auto-wiring)
   - [4. what is @SpringBootApplication?](#4-what-is-springbootapplication)
     - [4.1. @Configuration](#41-configuration)
+    - [@Bean vs @Component](#bean-vs-component)
     - [Spring(Infosys question)](#springinfosys-question)
       - [Srping Bean scrope?](#srping-bean-scrope)
       - [Spring framework:Tell me about spring boot](#spring-frameworktell-me-about-spring-boot)
@@ -85,6 +86,9 @@ Note, that we have to use this annotation with @Configuration:
 class VehicleFactoryConfig {}
 ```
 
+### @Bean vs @Component
+![](@Bean-@Compnent.png)
+
 
 ### Spring(Infosys question)
 #### Srping Bean scrope?
@@ -130,6 +134,8 @@ https://www.baeldung.com/spring-bean-scopes
 
 #### What are the annotations that you know for spring jpa and what do they mean? 
 #### What is an Http session? 
+* In simpler terms, a session is a state consisting of several requests and response between the client and the server.
+* It is a known fact that HTTP and Web Servers are both stateless. Hence, the only way to maintain the state of the user is by making use of technologies that implement session tracking.
 #### Where would you do the configuration in a spring project? 
 #### Describe the spring application workflow
 #### What is @RestController? 
